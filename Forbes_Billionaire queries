@@ -1,0 +1,3 @@
+-- Get billionaires that are from the United States and did not drop out of college. Sort by Networth descending.
+
+SELECT * FROM forbes_billionaires_geo WHERE Country = "United States" AND Education NOT LIKE "drop%" ORDER BY NetWorth DESC;
